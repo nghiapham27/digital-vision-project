@@ -305,6 +305,8 @@
     top: 0;
     left: 0;
     background-image: url(../img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: top;
     filter: blur(2px);
     z-index: -1;
