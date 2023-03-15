@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.2s;
     overflow: hidden;
 
     @include response(tab-port) {
