@@ -1,0 +1,34 @@
+@mixin response($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 40em) {
+      //640px
+      @content;
+      //    full screen
+      //    rearrange nav list
+      //    rearrange about & portfoliio sections
+      //    resize footer list
+    }
+  }
+  @if $breakpoint == tab-port {
+    //800px
+    @media (max-width: 50em) {
+      @content;
+      //    resize theme icons 56.25em
+      //    resize img's height in all sections
+    }
+  }
+  @if $breakpoint == tab-land {
+    //1200px
+    @media (max-width: 75em) {
+      @content;
+      //   resize img height in section-info & itself
+      //   show all hidden captions
+    }
+  }
+  @if $breakpoint == big-desktop {
+    //1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

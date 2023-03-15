@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // Define 1rem = 10px
+  font-size: 62.5%;
+  @include response(big-desktop) {
+    font-size: 100%; // 1rem = 16px
+  }
+  // responsive design
+  @include response(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include response(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+  @include response(phone) {
+    font-size: 31.25%; // 1rem = 5px
+  }
+}
+
+body {
+  padding: 2rem;
+  box-sizing: border-box;
+  @include response(tab-port) {
+    padding: 0;
+  }
+
+  &::selection {
+    color: $color-primary-dark-1;
+    background-color: $color-primary-bg;
+  }
+  &.onDark {
+    background-color: $color-grey-light-3 !important;
+    color: $color-grey-dark !important;
+    filter: contrast(80%);
+  }
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/1dd6a5f701.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <!-- CSS style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Script -->
+    <script defer src="script.js"></script>
+    <title>Digital Vision</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navigation">
+      <div class="logo-box">
+          <img src="img/favicon.png" alt="primary logo" class="logo-box__img"/>
+          <h2 class="logo-box__text">digital vision</h2>
+      </div>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#header" class="btn btn-text">home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#about" class="btn btn-text">about</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#services" class="btn btn-text">services</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#portfolio" class="btn btn-text">portfolio</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contact" class="btn btn-text">contact</a>
+        </li>
+      </ul>
+      <div class="navigation__btn">
+        <button href="" class= "btn btn-toggle theme-btn" data-theme="light">
+          <i class="fa-regular fa-moon fa-2xl theme-icon"></i>
+          <i class="fa-regular fa-sun fa-2xl hidden theme-icon""></i>
+        </button>
+        <button href="" class= "btn btn-toggle nav-btn">
+          <i class="fa-solid fa-bars fa-2xl bars-icon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-bg-container">
+        <div class="header-bg bg-1" data-bg=0 data-pos="">
+          <div class="header-bg__text">
+            <h1 class="header-heading-primary">
+              We can change
+              <br>
+              your digital world
+            </h1>
+            <p class="header-heading-sub">
+              Bold enough to blow a hole in your next marketing campaign.
+            </p>
+          </div>
+        </div>
+        <div class="header-bg bg-2" data-bg=1 data-pos="">
+          <div class="header-bg__text">
+            <h1 class="header-heading-primary">
+              You need
+              <br>
+              a good partner
+            </h1>
+            <p class="header-heading-sub">
+              Let us help you realise your true potential.
+            </p>
+          </div>
+        </div>
+        <div class="header-bg bg-3" data-bg=2 data-pos="">
+          <div class="header-bg__text">
+            <h1 class="header-heading-primary">
+              Shoot for
+              <br>
+              the hoop!
+            </h1>
+            <p class="header-heading-sub">
+              Aiming low is not an option for us.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="header-btn-container">
+          <div class="header-arrows-container">
+            <button class="header__arrow header__arrow--left btn btn-arrow">
+              <i class="fa-solid fa-xl fa-angles-left"></i>
+            </button>
+            <button class="header__arrow header__arrow--right btn btn-arrow">
+              <i class="fa-solid fa-xl fa-angles-right"></i>
+            </button>
+          </div>
+          <div class="header-dots-container">
+            <button class="header__dot" data-bg=0></button>
+            <button class="header__dot" data-bg=1></button>
+            <button class="header__dot" data-bg=2></button>
+          </div>
+      </div>
+    </header>
+
+     <!-- about section-->
+    <section class="section section-about" id="about">
+      <div class="section__desc">
+        <h2 class="section-heading-primary">About us</h2>
+        <span class="section-heading-sub">But don&apos;t just take our word for it...</span>
+      </div>
+      <!-- Info 1 -->
+      <div class="section-info">
+        <img src="img/about-1.jpg" alt="section-about-img-1" class="section-info__img section-about__img--1"/>
+        <!-- Main info 1 -->
+        <div class="section-info__main">
+          <div class="section-text-container">
+            <div class="section-heading">
+              <h2 class="section-heading-primary">Creative</h2>
+              <h2 class="section-heading-primary">&fresh</h2>
+              <h2 class="section-heading-sub">Our digital agency</h2>
+            </div>
+            <p class="section-text">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha. Social proof lean startup alpha scrum project non-disclosure agreement.</p>
+          </div>
+          <a href="#portfolio" class="btn btn-about">view portfolio</a>
+        </div>
+      </div>
+      <!-- Info 2 -->
+      <div class="section-info">
+        <!-- Main info 2 -->
+        <div class="section-info__main">
+          <div class="section-text-container">
+            <div class="section-heading">
+              <h2 class="section-heading-primary">Hip</h2>
+              <h2 class="section-heading-primary">&Funky</h2>
+              <h2 class="section-heading-sub">We try new things</h2>
+            </div>
+            <p class="section-text">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha. Social proof lean startup alpha scrum project non-disclosure agreement.</p>
+          </div>
+          <a href="#services" class="btn btn-about">Our services</a>
+        </div>
+        <img src="img/about-2.jpg" alt="section-about-img-2" class="section-info__img section-about__img--2"/>
+      </div>
+    </section>
+
+    <!-- services section-->
+    <section class="section section-services" id="services">
+      <div class="section__desc">
+        <h2 class="section-heading-primary">Our services</h2>
+        <span class="section-heading-sub">But don&apos;t just take our word for it...</span>
+      </div>
+      <div class="section-info">
+        <img src="img/services.jpg" alt="section-services-img" />
+        <div class="section-info__main">
+          <div class="section-text-container">
+            <div class="section-heading">
+              <h2 class="section-heading-primary">Things</h2>
+              <h2 class="section-heading-primary">we do</h2>
+              <h2 class="section-heading-sub">We exist to create</h2>
+            </div>
+            <p class="section-text">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha. Social proof lean startup alpha scrum project non-disclosure agreement.</p>
+          </div>
+          <a href="#contact" class="btn btn-about">Get in touch</a>        
+        </div>
+      </div>
+
+      <ul class="section-services__list">
+          <li class="section-services-item">
+            <div class="section-services-item__icon">
+              <i class="fa-brands fa-empire fa-5x"></i>
+              <h2 class="section-heading-sub services">Branding</h2>
+            </div>
+            <div class="section-caption section-services-item__caption">
+              <p>Business plan gamification user experience low hanging fruit twitter.</p>
+            </div>
+          </li>
+          <li class="section-services-item">
+            <div class="section-services-item__icon">
+              <i class="fa-solid fa-pager fa-5x"></i>
+              <h2 class="section-heading-sub services">Web design</h2>
+            </div>
+              <div class="section-caption section-services-item__caption">
+                  <p>Business plan gamification user experience low hanging fruit twitter.</p>
+              </div>
+          </li>
+          <li class="section-services-item">
+            <div class="section-services-item__icon">
+              <i class="fa-solid fa-wand-magic-sparkles fa-5x"></i>
+              <h2 class="section-heading-sub services">Graphic design</h2>
+            </div>
+            <div class="section-caption section-services-item__caption">
+                <p>Business plan gamification user experience low hanging fruit twitter.</p>
+            </div>
+          </li>
+        <!-- </ul> -->
+      </ul>
+    </section>
+
+    <!-- portfolio section-->
+    <section class="section section-portfolio" id="portfolio">
+      <div class="section__desc section-portfolio__desc">
+          <h2 class="section-heading-primary">Our clients love our work</h2>
+          <span class="section-heading-sub">But don&apos;t just take our word for it...</span>
+          <p class="section-text">“ABC Agency our the best. Not only did they deliver my work on time, they even walked my dog when I was out of town”</p>
+      </div>
+
+      <ul class="section-portfolio__list">
+          <li class="section-portfolio__item--text">
+            <div class="section-text-container section-portfolio__item--text">
+              <h2 class="section-heading-primary">Latest creations</h2>
+              <span class="section-heading-sub">We make beautiful things</span>
+              <p class="section-text section-portfolio">Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter.</p>
+            </div>
+          </li>
+          <li class="section-portfolio__item">
+            <figure>
+              <img src="img/portfolio-1.jpg" alt="img-portfolio-1" class="section-portfolio__item--img">
+              <figcaption class="section-caption section-portfolio__item--caption">
+                <h3>Portfolio 1</h3>
+                <p>Branding</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="section-portfolio__item">
+            <figure>
+              <img src="img/portfolio-2.jpg" alt="img-portfolio-2" class="section-portfolio__item--img">
+              <figcaption class="section-caption section-portfolio__item--caption">
+                <h3>Portfolio 2</h3>
+                <p>Branding</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="section-portfolio__item">
+            <figure>
+              <img src="img/portfolio-3.jpg" alt="img-portfolio-3" class="section-portfolio__item--img">
+              <figcaption class="section-caption section-portfolio__item--caption">
+                <h3>Portfolio 3</h3>
+                <p>Branding</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="section-portfolio__item">
+            <figure>
+              <img src="img/portfolio-4.jpg" alt="img-portfolio-4" class="section-portfolio__item--img">
+              <figcaption class="section-caption section-portfolio__item--caption">
+                <h3>Portfolio 4</h3>
+                <p>Branding & Web Design</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="section-portfolio__item">
+            <figure>
+              <img src="img/portfolio-5.jpg" alt="img-portfolio-5" class="section-portfolio__item--img">
+              <figcaption class="section-caption section-portfolio__item--caption">
+                <h3>Portfolio 5</h3>
+                <p>Web & Graphic Design</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="section-portfolio__item">
+            <figure>
+              <img src="img/portfolio-6.jpg" alt="img-portfolio-6" class="section-portfolio__item--img">
+              <figcaption class="section-caption section-portfolio__item--caption">
+                <h3>Portfolio 6</h3>
+                <p>Web Design</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="section-portfolio__item">
+            <figure>
+              <img src="img/portfolio-7.jpg" alt="img-portfolio-7" class="section-portfolio__item--img">
+              <figcaption class="section-caption section-portfolio__item--caption">
+                <h3>Portfolio 7</h3>
+                <p>Graphic Design</p>
+              </figcaption>
+            </figure>
+          </li>
+      </ul>
+      
+    </section>
+
+    <!-- contact section -->
+    <section class="section section-contact" id="contact">
+      <h2 class="section-heading-primary">Write us a letter</h2>
+      <p class="section-heading-sub">We appreciate your ideas</p>
+      <!-- Form -->
+      <form action="#" class="form">
+        <label for="name" class="form__label">Your name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+          class="form__input"
+        />
+        <label for="email" class="form__label">Your email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+          class="form__input"
+        />
+        <label for="msg" class="form__label">Your message</label>
+        <textarea name="msg" id="msg" placeholder="Write your message here..."
+          class="form__input form__input--msg" required></textarea>
+        <button class="btn form__btn">Send us &rarr;</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="logo-box">
+          <img src="img/favicon.png" alt="primary logo" class="logo-box__img"/>
+          <h2 class="logo-box__text">digital vision</h2>
+      </div>
+
+      <div class="footer-list">   
+        <h3 class="footer-heading">Menu</h3>
+        <ul class="footer__list">
+          <li>
+            <a href="#header" class="footer-link btn btn-text">home</a>
+          </li>
+          <li>
+            <a href="#about" class="footer-link btn btn-text">about</a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link btn btn-text">services</a>
+          </li>
+          <li >
+            <a href="#portfolio" class="footer-link btn btn-text">portfolio</a>
+          </li>
+          <li >
+            <a href="#contact" class="footer-link btn btn-text">contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <h3 class="footer-heading">Address</h3>
+        <ul>
+            <li class="footer-text">Suite #913</li>
+            <li class="footer-text">Corporation Building</li>
+            <li class="footer-text">Tibb Street</li>
+            <li class="footer-text">Manchester</li>
+            <li class="footer-text">M1 1TA</li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <h3 class="footer-heading">Contact</h3>
+        <ul>
+            <li class="footer-text">
+              <i class="fa-regular fa-envelope"></i>
+              info(at)youragency.com
+            </li>
+            <li class="footer-text">
+              <i class="fa-solid fa-phone"></i>
+              +44 800 123 456</li>
+            <li class="footer-social-icons">
+              <i class="fa-brands fa-facebook footer-icon btn btn-text"></i>
+              <i class="fa-brands fa-twitter footer-icon btn btn-text"></i>
+              <i class="fa-brands fa-discord footer-icon btn btn-text"></i>
+              <i class="fa-brands fa-telegram footer-icon btn btn-text"></i>
+            </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+  </body>
+</html>

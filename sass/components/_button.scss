@@ -1,0 +1,93 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    color: $color-grey-light-1;
+    background-image: linear-gradient(
+      $color-primary-light-1,
+      $color-primary-light-2
+    );
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+
+  &:hover {
+    background-image: linear-gradient($color-grey-light-1, $color-grey-light-3);
+    color: $color-primary-light-1;
+    transform: translateY(-0.3rem);
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+  }
+  &:focus {
+    outline: none;
+  }
+
+  // styling all the links
+  &.btn-text {
+    background-image: none;
+    color: $color-primary-light-1;
+
+    &.footer-link {
+      display: block;
+      padding: 0;
+    }
+    &.footer-icon {
+      padding: 0;
+      color: $color-grey-dark;
+      &:hover {
+        color: #1da1f2;
+      }
+    }
+
+    &:hover {
+      background-image: none;
+      color: $color-grey-dark;
+      transform: translateY(0);
+    }
+    &:active {
+      background-image: none;
+      // color: $color-grey-dark;
+      transform: translateY(0);
+    }
+  }
+
+  // styling the toggle button
+  &.btn-toggle {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    padding: 0;
+    background-image: none;
+    color: $color-black;
+    transform: translateY(0);
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-grey-light-3;
+    }
+  }
+
+  // styling the left & right arrows
+  &.btn-arrow {
+    display: flex;
+    font-weight: 400;
+    background-image: none;
+    color: $color-white;
+    &:hover {
+      transform: translateY(0);
+      color: $color-primary-dark-2;
+    }
+    &:active {
+      color: $color-white;
+      transform: translateY(0);
+    }
+  }
+}

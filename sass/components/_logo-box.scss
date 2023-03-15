@@ -1,0 +1,29 @@
+.logo-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 5rem;
+  // flex-shrink: 0;
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+  }
+  &__text {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    background: linear-gradient(
+      to bottom,
+      $color-primary-dark-2,
+      $color-primary-bg
+    );
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    @include response(phone) {
+      font-size: 12px;
+    }
+  }
+}

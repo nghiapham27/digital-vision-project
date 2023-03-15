@@ -1,0 +1,32 @@
+.footer {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #334155;
+
+  display: grid;
+  grid-template-columns: max-content repeat(3, 1fr);
+  align-items: center;
+  @include response(tab-port) {
+    grid-template-columns: min-content repeat(3, 1fr);
+  }
+  &-list {
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 7rem;
+    color: $color-grey-dark;
+
+    & li {
+      margin-top: 1rem;
+    }
+    @include response(phone) {
+      padding-left: 3rem;
+    }
+  }
+
+  &-social-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

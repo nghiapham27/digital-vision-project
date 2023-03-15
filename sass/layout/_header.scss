@@ -1,0 +1,113 @@
+//  Main Header
+.header {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  overflow-x: hidden; // NOT expand the bg width while sliding
+  margin-top: -($navigation-height);
+  @include response(phone) {
+    max-height: 400px;
+    margin-top: -50px;
+  }
+  @include response(tab-port) {
+    margin-top: -11rem;
+  }
+
+  // Header Background
+  &-bg {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+    transition: all 1.5s;
+    opacity: 0;
+    z-index: -10;
+
+    &.bg-1 {
+      background-image: $header-bg-1;
+    }
+    &.bg-2 {
+      background-image: $header-bg-2;
+    }
+    &.bg-3 {
+      background-image: $header-bg-3;
+    }
+
+    &__text {
+      padding-left: 10rem;
+      text-align: left;
+
+      @include response(tab-port) {
+        padding-right: 10rem;
+      }
+    }
+    // Styling for the bg header slider
+    &[data-pos='active-bg'] {
+      opacity: 0.8;
+      transform: translateX(0);
+    }
+    &[data-pos='left-bg'] {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    &[data-pos='right-bg'] {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+
+  // Button container
+  &-btn-container {
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 10;
+  }
+
+  &-arrows-container {
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__arrow {
+    height: 5rem;
+    align-items: center;
+    background-color: transparent;
+    @include response(tab-small) {
+      font-size: 1.5em;
+    }
+    @include response(small-phone) {
+      font-size: 1.2em;
+    }
+  }
+
+  // dots container
+  &-dots-container {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: center;
+  }
+
+  &__dot {
+    height: 1rem;
+    width: 1rem;
+    background-color: $color-grey-dark-2;
+    border-radius: 50%;
+    margin: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &.active-dot {
+      background-color: $color-grey-light-1;
+    }
+  }
+}
