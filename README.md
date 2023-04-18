@@ -14,7 +14,7 @@
 
 ```javascript
 # install package
-yarn install
+npm install
 # run the development server
-yarn dev
+npm start
 ```
