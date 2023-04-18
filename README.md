@@ -8,6 +8,7 @@
 
 - HTML5
 - CSS3
+- SASS
 - Vanilla Javascript
 
 ## Usage
